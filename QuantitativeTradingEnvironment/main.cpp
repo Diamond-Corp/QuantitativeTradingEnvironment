@@ -9,6 +9,8 @@
 #include "AppBase.h"
 #include "Composer.h"
 #include "Parser.h"
+#include "TradingStrategy.h"
+#include "OrderManager.h"
 #include <cstring>
 
 int main(int argc, const char * argv[]) {
