@@ -216,6 +216,13 @@ public:
         strcpy(symbol, _symbol);
     }
     
+    price_t get_price(){return price;}
+    quantity_t get_quantity(){return quantity;}
+    level_t get_level(){return level;}
+    const char * get_venue(){return venue;}
+    bool get_is_buy(){return is_buy;}
+    const char * get_symbol(){return symbol;}
+    
     
     
     
