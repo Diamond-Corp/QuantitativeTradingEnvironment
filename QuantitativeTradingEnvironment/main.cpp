@@ -6,6 +6,9 @@
 //
 
 #include <iostream>
+#include "AppBase.h"
+#include "Composer.h"
+#include "Parser.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...

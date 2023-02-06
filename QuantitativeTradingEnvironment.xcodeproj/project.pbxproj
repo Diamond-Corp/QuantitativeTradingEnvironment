@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3EDC9C6F2991B75800C930E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC9C6E2991B75800C930E7 /* main.cpp */; };
+		3EDC9C7A2991B7D700C930E7 /* Order.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC9C752991B7D700C930E7 /* Order.cpp */; };
+		3EDC9C7B2991B7F400C930E7 /* AppBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC9C762991B7D700C930E7 /* AppBase.h */; };
+		3EDC9C7C2991B7F400C930E7 /* Composer.h in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC9C782991B7D700C930E7 /* Composer.h */; };
+		3EDC9C7D2991B7F400C930E7 /* Order.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC9C772991B7D700C930E7 /* Order.hpp */; };
+		3EDC9C7E2991B7F400C930E7 /* Parser.h in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC9C792991B7D700C930E7 /* Parser.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		3EDC9C6B2991B75800C930E7 /* QuantitativeTradingEnvironment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QuantitativeTradingEnvironment; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDC9C6E2991B75800C930E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3EDC9C752991B7D700C930E7 /* Order.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Order.cpp; path = "../../../Downloads/Trading-System-Environment-main/TradingSystemEnvironment/Order.cpp"; sourceTree = "<group>"; };
+		3EDC9C762991B7D700C930E7 /* AppBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppBase.h; path = "../../../Downloads/Trading-System-Environment-main/TradingSystemEnvironment/AppBase.h"; sourceTree = "<group>"; };
+		3EDC9C772991B7D700C930E7 /* Order.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Order.hpp; path = "../../../Downloads/Trading-System-Environment-main/TradingSystemEnvironment/Order.hpp"; sourceTree = "<group>"; };
+		3EDC9C782991B7D700C930E7 /* Composer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Composer.h; path = "../../../Downloads/Trading-System-Environment-main/TradingSystemEnvironment/Composer.h"; sourceTree = "<group>"; };
+		3EDC9C792991B7D700C930E7 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parser.h; path = "../../../Downloads/Trading-System-Environment-main/TradingSystemEnvironment/Parser.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 		3EDC9C6D2991B75800C930E7 /* QuantitativeTradingEnvironment */ = {
 			isa = PBXGroup;
 			children = (
+				3EDC9C762991B7D700C930E7 /* AppBase.h */,
+				3EDC9C782991B7D700C930E7 /* Composer.h */,
+				3EDC9C752991B7D700C930E7 /* Order.cpp */,
+				3EDC9C772991B7D700C930E7 /* Order.hpp */,
+				3EDC9C792991B7D700C930E7 /* Parser.h */,
 				3EDC9C6E2991B75800C930E7 /* main.cpp */,
 			);
 			path = QuantitativeTradingEnvironment;
@@ -119,6 +134,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDC9C7B2991B7F400C930E7 /* AppBase.h in Sources */,
+				3EDC9C7C2991B7F400C930E7 /* Composer.h in Sources */,
+				3EDC9C7D2991B7F400C930E7 /* Order.hpp in Sources */,
+				3EDC9C7E2991B7F400C930E7 /* Parser.h in Sources */,
+				3EDC9C7A2991B7D700C930E7 /* Order.cpp in Sources */,
 				3EDC9C6F2991B75800C930E7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
