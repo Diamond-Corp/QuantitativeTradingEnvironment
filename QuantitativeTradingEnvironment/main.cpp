@@ -11,6 +11,7 @@
 #include "Parser.h"
 #include "TradingStrategy.h"
 #include "OrderManager.h"
+#include "MarketSimulator.h"
 #include <cstring>
 
 int main(int argc, const char * argv[]) {
