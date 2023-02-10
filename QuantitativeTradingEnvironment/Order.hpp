@@ -208,9 +208,10 @@ private:
     char venue[20];
     char symbol[20];
     bool is_buy;
+    unsigned int epoch_time;
     
 public:
-    BookUpdate(level_t _level , price_t _price, quantity_t _quantity , const char* _venue, const char* _symbol, bool _is_buy): level(_level), price(_price), quantity(_quantity), is_buy(_is_buy)
+    BookUpdate(level_t _level , price_t _price, quantity_t _quantity , const char* _venue, const char* _symbol, bool _is_buy, unsigned int epoch_time_): level(_level), price(_price), quantity(_quantity), is_buy(_is_buy),epoch_time(epoch_time_)
     {
         strcpy(venue, _venue);
         strcpy(symbol, _symbol);
@@ -219,9 +220,11 @@ public:
     price_t get_price(){return price;}
     quantity_t get_quantity(){return quantity;}
     level_t get_level(){return level;}
-    const char * get_venue(){return venue;}
+    const char * get_venue()const {return venue;}
     bool get_is_buy(){return is_buy;}
-    const char * get_symbol(){return symbol;}
+    const char * get_symbol()const {return symbol;}
+    unsigned int get_epoch_time() const { return epoch_time;}
+    
     
     
     

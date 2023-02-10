@@ -34,6 +34,7 @@
 		3EDC9C852991C6C500C930E7 /* TradingStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradingStrategy.h; sourceTree = "<group>"; };
 		3EDC9C862991C75800C930E7 /* OrderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderManager.h; sourceTree = "<group>"; };
 		3EDC9C872991C85F00C930E7 /* MarketSimulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketSimulator.h; sourceTree = "<group>"; };
+		3EDC9C892997114400C930E7 /* BookBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookBuilder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 				3EDC9C852991C6C500C930E7 /* TradingStrategy.h */,
 				3EDC9C862991C75800C930E7 /* OrderManager.h */,
 				3EDC9C872991C85F00C930E7 /* MarketSimulator.h */,
+				3EDC9C892997114400C930E7 /* BookBuilder.h */,
 			);
 			path = QuantitativeTradingEnvironment;
 			sourceTree = "<group>";

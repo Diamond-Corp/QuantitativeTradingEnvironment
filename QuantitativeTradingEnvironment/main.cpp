@@ -12,6 +12,7 @@
 #include "TradingStrategy.h"
 #include "OrderManager.h"
 #include "MarketSimulator.h"
+#include "BookBuilder.h"
 #include <cstring>
 
 int main(int argc, const char * argv[]) {

@@ -23,10 +23,10 @@ public:
     OrderManager(std::queue<Order> &strategy_to_ordermanager_,
                  std::queue<ExecutionOrder> &ordermanager_to_strategy_,
                  std::queue<Order> &ordermanager_to_simulator_,
-                 std::queue<ExecutionOrder> &simulator_to_ordermanager_):AppBase(strategy_to_ordermanager_,
+                 std::queue<ExecutionOrder> &simulator_to_ordermanager_, std::queue<BookUpdate>&bookbuuilder_to_strategy_):AppBase(strategy_to_ordermanager_,
                 ordermanager_to_strategy_,
                 ordermanager_to_simulator_,
-                simulator_to_ordermanager_)
+                simulator_to_ordermanager_,bookbuuilder_to_strategy_)
                 ,order_id(0){};
     virtual void start() { is_working = true;}
     virtual void stop() {
@@ -49,7 +49,8 @@ bool OrderManager::handle_order()
     const Order&e = strategy_to_ordermanager.front();
     strategy_to_ordermanager.pop();
     
-    order_id = e.getId();
+    //order_id = e.getId();
+    ++order_id;
     order.setType(e.getOrderType());
     order.setVenue(e.getVenue());
     order.setSymbol(e.getSymbol());
@@ -82,6 +83,7 @@ bool OrderManager::handle_order()
         return true;
         
     }
+    
     
     list_orders[order_id] = execution_order;
     ordermanager_to_simulator.push(order);
